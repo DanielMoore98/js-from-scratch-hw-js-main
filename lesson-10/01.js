@@ -105,8 +105,7 @@ const controller = {
   // your code
   deleteMovie(movId) {
     model.deleteMovie(movId)
-    const messageBox = document.querySelector('.message-box')
-    messageBox.textContent = "Фильм успешно удалён!"
+    view.displayMessage("Фильм успешно удалён!")
   }
 }
 
